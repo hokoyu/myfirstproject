@@ -1,6 +1,0 @@
-0:0:0:0:0:0:0:1 - - [01/Feb/2018:20:10:12 +0800] "GET /taotao-web/rest/test/queryDate HTTP/1.1" 404 1011 http-bio-9091-exec-2 79
-0:0:0:0:0:0:0:1 - - [01/Feb/2018:20:10:12 +0800] "GET /taotao-web/rest/test/queryDate HTTP/1.1" 404 1011 http-bio-9091-exec-3 100
-0:0:0:0:0:0:0:1 - - [01/Feb/2018:20:10:13 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-9091-exec-5 1
-0:0:0:0:0:0:0:1 - - [01/Feb/2018:20:10:13 +0800] "GET /rest/test/queryDate HTTP/1.1" 200 21 http-bio-9091-exec-1 1192
-0:0:0:0:0:0:0:1 - - [01/Feb/2018:20:10:22 +0800] "GET /taotao-web/rest/test/queryDate HTTP/1.1" 404 1011 http-bio-9091-exec-6 1
-0:0:0:0:0:0:0:1 - - [01/Feb/2018:20:10:37 +0800] "GET /rest/test/queryDate HTTP/1.1" 200 21 http-bio-9091-exec-8 7
