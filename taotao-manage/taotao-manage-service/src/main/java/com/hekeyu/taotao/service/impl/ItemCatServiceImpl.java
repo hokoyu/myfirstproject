@@ -4,12 +4,14 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.github.pagehelper.PageHelper;
 import com.hekeyu.taotao.manage.pojo.ItemCat;
 import com.hekeyu.taotao.mapper.ItemCatMapper;
 import com.hekeyu.taotao.service.ItemCatService;
 @Service
+@Transactional
 public class ItemCatServiceImpl extends BaseServiceImpl<ItemCat> implements ItemCatService {
 	@Autowired
 	private ItemCatMapper itemCatMapper;
