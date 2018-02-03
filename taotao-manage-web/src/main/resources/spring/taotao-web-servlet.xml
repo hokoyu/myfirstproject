@@ -26,5 +26,7 @@
 		id="testService" timeout="100000"/>
 	<dubbo:reference interface="com.hekeyu.taotao.service.ItemCatService"
 		id="itemCatService" timeout="100000"/>
+	<dubbo:reference interface="com.hekeyu.taotao.service.ItemService"
+		id="itemService" timeout="100000"/>
 	
 </beans>

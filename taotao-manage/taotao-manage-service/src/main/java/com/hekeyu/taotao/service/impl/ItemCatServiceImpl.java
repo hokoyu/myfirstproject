@@ -10,12 +10,14 @@ import com.hekeyu.taotao.manage.pojo.ItemCat;
 import com.hekeyu.taotao.mapper.ItemCatMapper;
 import com.hekeyu.taotao.service.ItemCatService;
 @Service
-public class ItemCatServiceImpl implements ItemCatService {
+public class ItemCatServiceImpl extends BaseServiceImpl<ItemCat> implements ItemCatService {
 	@Autowired
 	private ItemCatMapper itemCatMapper;
 	
 	@Override
 	public List<ItemCat> queryItemCatListByPage(Integer page, Integer rows) {
+		
+		
 		PageHelper.startPage(page, rows);
 		return itemCatMapper.selectAll();
 		
