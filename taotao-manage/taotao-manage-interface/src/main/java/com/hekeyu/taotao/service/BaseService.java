@@ -30,5 +30,7 @@ public interface BaseService<T> {
 
 	// 根据id集合删除
 	public void deleteByIds(Serializable[] ids);
+	
+	
 
 }

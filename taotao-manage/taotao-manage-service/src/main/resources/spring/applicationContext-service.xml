@@ -30,4 +30,7 @@
 	<bean id="itemServiceImpl" class="com.hekeyu.taotao.service.impl.ItemServiceImpl"/>
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="com.hekeyu.taotao.service.ItemService" ref="itemServiceImpl" />
+	<bean id="itemDescServiceImpl" class="com.hekeyu.taotao.service.impl.ItemDescServiceImpl"/>
+	<!-- 声明需要暴露的服务接口 -->
+	<dubbo:service interface="com.hekeyu.taotao.service.ItemDescService" ref="itemDescServiceImpl" />
 </beans>

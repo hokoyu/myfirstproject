@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.hekeyu.taotao.manage.pojo.ItemCat;
 import com.hekeyu.taotao.service.ItemCatService;
@@ -38,6 +39,22 @@ public class ItemCatController {
 			itemCat.setParentId(parentId);
 			List<ItemCat> list = itemCatService.queryListByWhere(itemCat);
 			return ResponseEntity.ok(list);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+	}
+	/**
+	 * 根据id找商品项类目
+	 * @param id
+	 * @return
+	 */
+	@RequestMapping(value="{itemCatId}",method=RequestMethod.GET)
+	public ResponseEntity<ItemCat> queryItemCatById(@PathVariable Long itemCatId){
+		
+		try {
+			ItemCat itemCat = itemCatService.queryById(itemCatId);
+			return ResponseEntity.ok(itemCat);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -83,5 +83,7 @@ public class BaseServiceImpl<T extends BasePojo> implements BaseService<T> {
 		criteria.andIn("id", Arrays.asList(ids));
 		mapper.deleteByExample(example);
 	}
+	
+	
 
 }
