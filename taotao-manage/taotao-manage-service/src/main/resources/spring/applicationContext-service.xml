@@ -33,4 +33,10 @@
 	<bean id="itemDescServiceImpl" class="com.hekeyu.taotao.service.impl.ItemDescServiceImpl"/>
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="com.hekeyu.taotao.service.ItemDescService" ref="itemDescServiceImpl" />
+	<bean id="contentCategoryServiceImpl" class="com.hekeyu.taotao.service.impl.ContentCategoryServiceImpl"/>
+	<!-- 声明需要暴露的服务接口 -->
+	<dubbo:service interface="com.hekeyu.taotao.service.ContentCategoryService" ref="contentCategoryServiceImpl" />
+	<bean id="contentServiceImpl" class="com.hekeyu.taotao.service.impl.ContentServiceImpl"/>
+	<!-- 声明需要暴露的服务接口 -->
+	<dubbo:service interface="com.hekeyu.taotao.service.ContentService" ref="contentServiceImpl" />
 </beans>

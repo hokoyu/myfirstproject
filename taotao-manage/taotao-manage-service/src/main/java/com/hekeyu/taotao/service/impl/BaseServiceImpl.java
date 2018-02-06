@@ -68,7 +68,7 @@ public class BaseServiceImpl<T extends BasePojo> implements BaseService<T> {
 		if(t.getUpdated()==null) {
 			t.setUpdated(new Date());
 		}
-		mapper.updateByPrimaryKey(t);
+		mapper.updateByPrimaryKeySelective(t);
 	}
 
 	@Override
